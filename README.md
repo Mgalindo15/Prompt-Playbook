@@ -1,4 +1,4 @@
-# 🧠 prompt-playbook
+# 🧠 Prompt-Playbook
 
 A library of prompt patterns for conversational LLMs that help people **decide, learn, and act**.  
 Includes games, planners, tutors, and task decomposers—each with annotated techniques and runnable CLI demos.
