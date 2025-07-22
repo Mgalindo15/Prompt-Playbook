@@ -1,7 +1,8 @@
 # Prompt Playbook
 Tech-agnostic patterns for using conversational LLMs to *decide, learn, act*.
 
-| Pattern | Use-case | Files |
-|---------|----------|-------|
-| Learning Games | Generate Novel Study Materials | patterns/snapshot_games.md |
+| Pattern | Use-case | Files | **Similar Tech** |
+|---------|----------|-------|------------------|
+| Snapshot Games | Code-comprehension mini-games | patterns/snapshot_games.md | Zybooks, LeetCode “Playground” |
+
 ...
