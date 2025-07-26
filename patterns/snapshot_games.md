@@ -95,4 +95,31 @@ In this particular game I want to use [language, packages] and specifically focu
 |-----------|---------------|-------------|
 | **Specific-Non-Specific** | “type errors, logical errors, runtime errors, whatever” | after providing specific categorical examples, "whatever" is encoded as "along these lines" |
 | **Function, then Form** | “with line numbers (1 -> n) on the **lefthand side**” | Generate the "n" number lines first, then control what those lines look like. |
-|
+
+## 4. Snapshot Write!
+
+Flipping the traditional Snapshot games on their head; this time, you have the model prompt YOU to generate some code, then, ChatGPT will assess your code along three dimensions: logics, conventions, and syntax.
+
+**Prompt skeleton**
+
+```text
+Let’s play a different game called Snapshow Write! Unlike the other Snapshot games, this time I want you to provide me with a prompt, and I will provide you with the snapshot of code. Then you can parse my code and analyze it along these dimensions:
+
+1. Overall Logic. Does it accurately attempt to solve the problem specified in the question? Even if there are errors preventing the code from running effectively, is it structured and organized in such a way that makes sense given the nature of the task?
+2. Use of conventions. Look at the imports, classes, functions, [hooks, actions, return statements, jsx,] etc… Are they used properly? Is anything missing? Is anything added that shouldn’t be? Could anything be done more efficiently?
+3. Syntax. Missing parentheses, curly braces. Typos. Incorrect operators (!=, when it should be !==), etc. Break it down!
+
+Since this game will be analysis heavy, please make the tasks lightweight—not necessarily simple, but I don’t want to be writing a ton of code. Make the focus content driven. The content could be something common like [count updating, form or input creation and manipulation, or something more abstract and creative like a game feature or connecting seemingly unrelated features.]
+
+As usual, no hints or comments. Just provide a scenario and a problem that I can solve with code!
+
+In this particular game I want to use [language, packages] and specifically focus on [features].
+
+```
+
+## Additional Techniques
+
+| Technique |   Highlight   | Explanation |
+|-----------|---------------|-------------|
+| **Question-Criteria** | “Does it accurately solve ...? Are they used properly? Could anything be done ...?” | Questions control perspective. Use them when trying to get ChatGPT to understand how to think about a problem. |
+| **Exceptions** | “Even if there are errors preventing the code from running effectively, ...” | Similar to **Negative Instruction**, Exceptions manipulate ChatGPT's value hierarchy, saying "even if x happens, proceed with y" where y is the intended goal. |
